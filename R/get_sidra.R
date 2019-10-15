@@ -431,7 +431,9 @@ get_sidra <- function(x,
     path <- rjson::fromJSON(path)
     path <- as.data.frame(do.call("rbind", path))
     
-    path <- tidyr::unnest(path)
+    # temporary workaround
+    #path <- tidyr::unnest(path)
+    path <- unnest(path)
     
     if (path_header == "y"){
       
