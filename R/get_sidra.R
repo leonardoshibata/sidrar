@@ -79,6 +79,7 @@
 #' @export
 
 # temporary workaround
+library(tidyr)
 unnest <- unnest_legacy
 
 get_sidra <- function(x,
