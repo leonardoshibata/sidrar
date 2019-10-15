@@ -78,6 +78,9 @@
 #' @keywords sidra IBGE
 #' @export
 
+# temporary workaround
+unnest <- unnest_legacy
+
 get_sidra <- function(x,
                       variable = "allxp",
                       period = "last",
