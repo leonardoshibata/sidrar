@@ -245,7 +245,7 @@ get_sidra <- function(x,
       
     } else if (!is.null(classific)) {
       
-      if (is.null(category) || (is.character(category) & category == "all") {
+      if (is.null(category) || (is.character(category) & category == "all")) {
         
         path_classific <- paste0("/", paste0(classific, "/all", collapse = "/"))
         
